@@ -10,7 +10,7 @@
 
 <body>
     <button onclick="subscribe()">Subscribe</button>
-
+    <p id="status"></p>
     <script>
 
         addEventListener('load', async () => {
@@ -41,6 +41,7 @@
             })
 
             console.log(JSON.stringify(push));
+            document.getElementById('status').innerHTML = JSON.stringify(push);
         }
 
 
